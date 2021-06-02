@@ -54,4 +54,4 @@ For example:
 
 - Since symbols point to the same memory location, they are a lot **faster to access than strings**. 
 
-- Most commonly, a symbol is used like **label** which makes them particuarly useful when used in **conjuction** with the **hash** data type.
+- Most commonly, a symbol is used like a **label** which makes them particuarly useful when used in **conjuction** with the **hash** data type.
