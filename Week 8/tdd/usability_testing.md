@@ -1,6 +1,10 @@
 # Usability testing
 
-Software testing
+## Link to lesson
+
+A Link to lesson can be found [here.](https://ait.instructure.com/courses/3520/pages/software-testing?module_item_id=272749)
+
+# Software testing
 
 - Testing is a crucial part of software development of any kind
 
@@ -41,7 +45,7 @@ The primary goal is to make sure our program is functional
 	- We ant to make sure that if we are storing any data about our users that we are protecting that data
 	- We also need to make sure that we are porter sting the companies that use our application from finial loss because of the way our application is working
 
-Why we love testing
+# Why we love testing
 	
 As a developer you should love testing!
 
@@ -64,7 +68,7 @@ Functional testing verifies that the application functions as expected without e
 - Regression testing
 - Acceptance testing
 
-Unit testing
+# Unit testing
 
 Perhaps one of the most important types of testing is unit testing. 
 
@@ -102,7 +106,7 @@ Integration testing
 - So we can use integration test with unit test to gain more confidence about that base functionality of our code.
 - For integration testing. we can use the same libraries and frameworks that we do for unit testing.
 
-End-to-end (system) testing
+# End-to-end (system) testing
 
 - These are a type of integration test but they comprehensive integrations test that test the entire application process.
 - We will typically test user scenarios so common activities that a user of our application will perform to make sure you can perform those actions and everything works as expected from the front end all the way to the back end. to the database.
@@ -113,7 +117,7 @@ End-to-end (system) testing
 
 These are the type of functional testing that are performed by developers and sometimes quality assurance engineers as well in largest companies. There is one more type of functional testing that is done by our stakeholder/
 
-Acceptance testing
+# Acceptance testing
 
 - It is often considered the final step of functional testing and is done by our stake holder so product owners and our end customer are some examples of our end customer or clients.
 
@@ -127,7 +131,7 @@ Acceptance testing
 
 - We make sure in acceptance testing that all the requirements agreed on between development and the stakeholder have been met. 
 
-Nonfunctional testing
+# Nonfunctional testing
 
 - There are a number of non functional l testing types too.
 
@@ -139,7 +143,7 @@ Nonfunctional testing
     - We also group recruit testing in this category
     - Disaster recovery testing involves testing that if we have a complete failure of a network for example, or some hardwire that our application is able to fall over to another set of hardware and continue to run.
 
-Usability testing
+# Usability testing
 
 Usability testing is really important because we an make the best application in the world that ’s completely functional but if our users don’t know how to use it or can’t use it, then it’s not very valuable. 
 
@@ -151,7 +155,7 @@ Usability testing is really important because we an make the best application in
 - At the end of our iterative process, we’ll do usability testing to make sure that we’re developing an application that our target end users are able to use.
 - We use usability testing to identify any missing or inadequate user interface that prevents users from being able to use our application the way we expect them to. 
 
-Manual vs automated testing
+# Manual vs automated testing
 
 - There’s almost always a combination of both manual and automated testing.
 
@@ -163,7 +167,7 @@ Manual vs automated testing
 - No matter what, we need to document our results and we need to do the best that we can to make sure the we have sufficient coverage for our application.
 - A balance that provides really good tests covered and also allows us to delver application on time is always what we are trying to find.
 
-Benefits of automated tests
+# Benefits of automated tests
 
 - Manual tests just take a long time to run.
 - Manual tests are a person/human being actually running our application with different inputs to see that things are working.
@@ -182,7 +186,7 @@ Benefits of automated tests
 - That requires that automated tests are being run against that code before it is released
 - SO automated test are really grea. they enable a lot of additional testing for us and our application . The really do increase developer confidence and making any changes to the code.
 
-Challenges os automated testing.
+# Challenges os automated testing.
 
 - Not only are we writing code for our application but we are also writing code fo our test
 
@@ -205,7 +209,7 @@ Challenges os automated testing.
 
 - If we have our automated tests there and we feel really confident making changes to our code but then we don’t do such a good job or keeping our tests up today with the code changes, then we can feel really confident about our code and that could come back to bite us because our code may actually have problems that we haven’t detected with our existing automated test.
 
-Developer Responsibilities
+# Developer Responsibilities
 
 Testing mostly is a developer responsibility. even if others are involved in the testing process.
 As developers we are expected to:
