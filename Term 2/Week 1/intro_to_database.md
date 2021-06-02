@@ -38,7 +38,7 @@
     - There are two ways we can structure this database to create information and one of them is called a Relational Database.
 
 
-# Relational Databases
+# Relational Databases (overview)
 
 - Relational databases organise data in tables with rows and columns.
 
@@ -48,4 +48,29 @@
 
 - The rows (also called tuples) represent individual records in the table. 
 
+- One example of a Relational Database is a spreadsheet. 
+
 ![Alt](relational_database_example.png)
+
+# Nonrelational Databases (overview)
+
+- Data is organised as a collection of documents. 
+
+- Compared to relational databases, collections are like tables and documents are like rows. 
+
+- Attributes for data are defined (like columns for relational databases), but are loosely structured. 
+
+- One of the big differences with a nonrelational database is the we don’t have a well defined structure. 
+
+- We don’t always have attributes that are well defined or consistent with all entries or representations of our data.
+
+- Therefore, we could have one document in our collection that has a discount attribute and maybe not all documents have that attribute. 
+
+- This type of database is really useful when we have organic data. 
+
+- For example when we have dynamic structure, that it is likely to change or be different between instances of our pieces of information. 
+
+![Alt](nonrelational_database_example.png)
+
+# Relational Databases
+
