@@ -21,7 +21,7 @@
 
 - When we run out of digits from one place, we simply move to the next place.
 
-Example with base 10:
+## Example with base 10:
 
 …7, 8, 9
 
@@ -39,7 +39,7 @@ Example with base 10:
 ……100, 101, 102 etc
 
 
-Binary
+## Binary
 
 - Decimal is base 10.
 
@@ -49,7 +49,7 @@ Binary
 
 	0, 1
 
-Translating decimal to binary  (1 -5) 
+# Translating decimal to binary  (1 -5) 
 
 - Representing the decimal 1 in binary is straight forward:
 
@@ -61,7 +61,7 @@ Translating decimal to binary  (1 -5)
 
 		2 decimal = 10 binary 
 
-- At this point, we still have another digit we can increment before moving to the next place
+- At this point, we still have another digit we can increment before moving to the next place.
 
 - Therefore we just need to increment the next digit:
 
@@ -71,7 +71,7 @@ Translating decimal to binary  (1 -5)
 
 		4 decimal = 100 binary 
 
-- Just like before, we have another digit we can increment before moving to the next place
+- Just like before, we have another digit we can increment before moving to the next place:
 
 		5 decimal = 101 binary 
 
