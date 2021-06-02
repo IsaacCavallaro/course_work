@@ -71,4 +71,3 @@ Run the rails app
 - The s stands for server
 
 
-

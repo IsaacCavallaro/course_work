@@ -80,5 +80,3 @@
 	- Delete
 
 - These are the four most common operations we do on a website. 
-
-
