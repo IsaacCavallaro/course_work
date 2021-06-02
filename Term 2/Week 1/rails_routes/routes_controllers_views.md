@@ -130,3 +130,14 @@ A link to the lesson can be found [here.](https://ait.instructure.com/courses/35
 
 - Also, the item must have an ID if we want access to it. 
 
+
+# Action, Route and View conventions (cont.)
+
+- The route tells the rails server what to display when the user just types in the server URL with no additional path. 
+
+- In other words, it is the home or index of the application. 
+
+- The root route is specified in the config/routes.rb with the syntax: 
+
+
+		root to: ‘controller#action’
