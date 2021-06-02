@@ -111,8 +111,7 @@ Translating decimal to binary  (1 -5)
 - Therefore the place value of 4 in 5480 is equal to 4 x 100 = 400.
 
 
-Place Values - Binary
-
+# Place Values - Binary
 
 - In binary (and in every other base) place values are exactly the same in that the digit value gets multiplied by its place in the number.
 
@@ -138,7 +137,7 @@ Place Values - Binary
 
 	101100
 
-￼
+![Alt](binary_place_values_example.png)
 
     - In the 1’s place we have 2 to the 0 power
 
@@ -161,7 +160,7 @@ Place Values - Binary
 	- Therefore its place value is 1 x 32 = 32 (in decimal)
 
 
-Converting from Binary to Decimal 
+# Converting from Binary to Decimal 
 
 - Another way to think about determine the place value of a digit in a number is just converting from the number system (binary in these examples) to decimal. 
 
