@@ -15,7 +15,7 @@ A link to the lesson can be found [here.](https://ait.instructure.com/courses/35
 
 - It is a human language used to describe an algorithm. NOT specific to any syntax or grammar related to a  programming language. 
 
-- pseudocode focus on the logic of solving the problem rather than how it will be worked out in a particular language.
+- Pseudocode focus on the logic of solving the problem rather than how it will be worked out in a particular language.
 
 - Well written pseudocode should be easy to translate into ANY programming language.  
 
@@ -25,21 +25,21 @@ A link to the lesson can be found [here.](https://ait.instructure.com/courses/35
 
 - We write pseudocode  to design an algorithm. 
 
-- In tougher words, we use pseudocode to design a solution to a problem. 
+- In other words, we use pseudocode to design a solution to a problem. 
 
-- For this reason used one code is usually written before any actually computer code it written. 
+- For this reason, pseudocode is usually written before any actually computer code it written. 
 
-- You may even think of it a s kind of a simple prototype of the final product. 
+- You may even think of it as kind of a simple prototype of the final product. 
 
 # Who is pseudocode for?
 
--  first we are writing it for ourselves. 
+-  First we are writing it for ourselves. 
 
-- Pseudocode code is often our first tool when we are solving a problem 
+- Pseudocode code is often our first tool when we are solving a problem.
 
 - Pseudocode  is a fundamental part of your programming process. 
 
-- We also write pseudocode for others 
+- We also write pseudocode for others. 
 
 - Pseudocode is often shared with a team or required by a client before any actual coding work can begin.
 
@@ -49,13 +49,15 @@ A link to the lesson can be found [here.](https://ait.instructure.com/courses/35
 
 ## STEP 1: Problem Definition
 
-Step one in writing pseudocode is to read the problem definition. SO if we are going to write pseudocode, WHAT ARE WE WRITING IT FOR?
+- Step one in writing pseudocode is to read the problem definition. SO if we are going to write pseudocode, WHAT ARE WE WRITING IT FOR?
 
-Example: How many weeks it will take to save the money for a new computer after you have paid your living expenses? 
+- Example: 
+
+    - How many weeks it will take to save the money for a new computer after you have paid your living expenses? 
 
 ## STEP 2: Define the inputs
 
-IN other words, what are the values that are required by the program in order to solve the problem? We give each input a unique a meaningful name. 
+-  In other words, what are the values that are required by the program in order to solve the problem? We give each input a unique a meaningful name. 
 
 So the inputs for the example would be 
 
@@ -65,7 +67,7 @@ So the inputs for the example would be
 
 ## STEP 3: Define the Outputs 
 
-These values are the result of processing of inputs. We give each output a unique and manful name. 
+- These values are the result of processing of inputs. We give each output a unique and manful name. 
 
 The outputs for this problem are
 
@@ -76,22 +78,23 @@ These are the things we expect to get as OUTPUT from our program.
 
 ## STEP 4: Define the process (aka write the pseudocode) 
 
-These are the things that will need to happen at EACH STEP of the algorithm in order to arrive at the solution to the problem. 
+- These are the things that will need to happen at EACH STEP of the algorithm in order to arrive at the solution to the problem. 
 
-This list of steps is called pseudocode. 
+- This list of steps is called pseudocode. 
 
-All algorithms have a sequence. The importance of that sequence becomes clear if you were to images swapping around some of those steps. 
+- All algorithms have a sequence. The importance of that sequence becomes clear if you were to imagine swapping around some of those steps. 
 
-Example:
+**Example:**
 
 1. Get WeeklyWages
+
 2. Get WeeklyLivingExpenses
 3. Get PriceOfNewComputer
 4. NetWages = WeeklyWages - WeeklyLivingExpenses
 5. NumberOfWeeksRequired = PriceOfNewComputer/NetWages
 6. Display the result to the user
 
-The order of these steps in REALLY IMPORTANT.
+## The order of these steps in REALLY IMPORTANT.
 
 - Imagine for example if you tried to do number 5 before you did step number 2? How are you going to do price of the new computer divided by net wrages if you don’t yet know what the price of the new computer or net wages are?
 
