@@ -8,7 +8,7 @@
 
 # Layout
 
-- Each directory is seperated by the number of the week (Week 1 for example).
+- Each directory is seperated by the Term and then number of the week (Term 1 and Week 1 for example).
 
 - Within each directory, the content covered in that week is summarised. 
 
