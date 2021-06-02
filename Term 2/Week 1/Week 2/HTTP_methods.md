@@ -52,4 +52,33 @@
 
 ## PUT/PATCH
 
+- PUT and PATCH are both used to update information. 
+
+- The most common use of these two methods is when we want to edit information that tis already on the sever:
+
+	- Updating data from our personal account.
+
+	- Edit a post from out blog. 
+
+- Both of the examples use a PUT or a PATH method. 
+
+
+## DELETE
+
+
+- The DELETE method is used when we want to remove something from the server. 
+
+
+
+# CRUD
+
+- Crud stands for:
+
+	- Create
+	- Read
+	- Update
+	- Delete
+
+- These are the four most common operations we do on a website. 
+
 
