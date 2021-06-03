@@ -10,7 +10,7 @@
 
 - In any base we have as many digits as the base number
 
-- in base 10, we have digitals:
+- in base 10, we have digits:
 
 
 	0, 1, 2, 3, 4, 5, 6, 7, 8, 9
