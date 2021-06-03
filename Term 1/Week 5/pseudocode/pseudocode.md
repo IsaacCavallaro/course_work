@@ -94,7 +94,7 @@ These are the things we expect to get as OUTPUT from our program.
 5. NumberOfWeeksRequired = PriceOfNewComputer/NetWages
 6. Display the result to the user
 
-## The order of these steps in REALLY IMPORTANT.
+## The order of these steps is REALLY IMPORTANT.
 
 - Imagine for example if you tried to do number 5 before you did step number 2? How are you going to do price of the new computer divided by net wrages if you don’t yet know what the price of the new computer or net wages are?
 
