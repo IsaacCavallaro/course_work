@@ -350,3 +350,128 @@
 ![Alt](binary_example_eleven.png)
 
 - Therefore, the binary number 1100 is equal to 12 in decimal or base 10. 
+
+## 3rd Example - 100110
+
+- If we take the binary number 100110 as an example
+
+
+![Alt](binary_example_twelve.png)
+
+- We have:
+
+	 32 + 4 + 2 = 38 in decimal or base 10.
+
+
+![Alt](binary_example_thirteen.png)
+
+- In this manner, binary is rather simple as we are always dealing with 1’s and 0’s.
+
+- Therefore, we are either adding the place into the result.
+
+OR
+
+- We are not adding that place into the result because there is a 0 there. 
+
+# Converting from decimal to binary  - method 1
+
+
+Example: 19 in base 10
+
+
+- In this case we basically do the opposite from covenanting a binary to a decimal. 
+
+
+- Step One:
+	
+	- “What is the largest power of 2 that goes into 19?” - Put a 1 in that place. 
+	
+	- In this example(19 in base 10) 16 is the largest power of 2 - So we put a 1 in that place (see image below). 
+
+	- By putting a 1 in that place, we now know that we are adding 16. 
+
+![Alt](decimal_to_binary_example_one.png)
+
+- Step Two:
+
+    - “What’s left?” - in this example if I take 16 out of 19 we will have 3 left over. 
+
+	- “What’s the largest power of 2 that goes into 3?” And that will be 2.
+
+![Alt](decimal_to_binary_example_two.png)
+
+
+- Now we add 16 + 2 which will get us to 18 which means we still need 1 more to reach our intended number in this example (19 in base 10).
+
+- We can just add a 1 in the 1’s place.
+
+![Alt](decimal_to_binary_example_three.png)
+
+
+- Then we can fill in the 0’s everywhere else.
+
+![Alt](decimal_to_binary_example_four.png)
+
+- And we finish with the binary number:
+
+		10011 
+
+- This represents 
+
+		19  (in base 10) 
+
+- This process uses the “Method One” and it works well with Binary because we only have 1’s and 0’s as digits.  
+
+- This process gets a bit tricky when we are dealing with base numbers bigger than 2. 
+
+# Another example of converting from decimal to binary  - method 1
+
+## Example: 143 in base 10
+
+
+- Step One:
+	
+	- “What is the largest power of 2 that goes into 143?” - Put a 1 in that place. 
+
+	- In this example(143 in base 10) 128 is the largest power of 2 - So we put a 1 in that place (see image below). 
+
+	- By putting a 1 in that place, we now know that we are adding 128.
+
+![Alt](decimal_to_binary_example_five.png)
+
+- Step Two:
+
+	- “What’s left?” - in this example if I take 128 out of 143 we will have 15 left over. 
+
+	- “What’s the largest power of 2 that goes into 15?” And that will be 8 (because 16 is too big).
+
+
+![Alt](decimal_to_binary_example_six.png)
+
+- Now we subtract 8 from 15 which = 7 left over 
+
+- And we can fit a 4 in the 7 so we add a 1 (see image below)
+
+![Alt](decimal_to_binary_example_seven.png)
+
+
+- Now we subtract 4 from 7 which = 3 left over 
+
+- And we can fit a 2 in the 3 (so we put a 1 in the 2’s place - see image below)
+
+![Alt](decimal_to_binary_example_eight.png)
+
+- And we have one left over so we add a 1 to the 1’s place.
+
+![Alt](decimal_to_binary_example_nine.png)
+
+- So, the number 143 in base 10 can be represented in base 2 as:
+
+	128 + 8 + 4 + 2 + 1 
+
+- Which is:
+
+	10001111
+
+
+
