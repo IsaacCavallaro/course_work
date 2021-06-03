@@ -19,7 +19,6 @@
 
 ![Alt](mvc_diagram.png)
 
-
 # View 
 
 - The view is what the user is interacting with
