@@ -187,3 +187,166 @@
 	- Therefore we have 32 + 8 + 4 + 2 = 46
 
 	- 46 is the value of this number 101110 in decimal or base 10	
+
+
+![Alt](converting_to_binary_example.png)
+
+## NOTE
+
+- Even binary number will ALWAYS end in a 0
+
+- Odd binary numbers will ALWAYS end in a 1 
+
+- This is because the final number in a binary digit is in the 1’s place so if we have a 1 there we will have an odd number and if we have a 0 there we will have an even number.
+
+- Any number raised by the power of 0 is 1. 
+
+
+# ANOTHER BINARY EXAMPLE
+
+- Binary number is:
+
+	10110
+
+- And we want to know what this number is in base 10 (decimal). 
+
+- First we will consider each of the places
+
+
+	10110 
+	
+	- **From right to left we have:**
+	
+	- 2 to the 0 place
+	- 2 to the 1 place
+	- 2 to the 2 place
+	- 2 to the 3 place
+	- 2 to the 4 place
+
+![Alt](binary_example_two.png)
+
+- The image above illustrates the place value for each digit in the binary number 10110
+
+- As highlight in the image, we only need to consider the digits with 1 and not the digits with 0.
+
+- Therefore our sum will look like:
+
+![Alt](binary_example_three.png)
+
+- Which is: 
+
+	- 1 x 2 to the power of 4 +
+
+	- 1 x 2 to the power of 2 +
+
+	- 1 x 2 to the power of 1 
+
+- This is the same as:
+
+![Alt](binary_example_four.png)
+
+- Which is:
+
+
+	- 1 x 16 +
+
+	- 1 x 4 +
+
+	- 2 
+
+- Finally this is:
+
+- 16 + 4 + 2 = 22
+
+
+- 22 is in base 10 (decimal). 
+
+# Helpful tip
+
+- It is advised to memorise the first 5 or so base 2 (binary) numbers
+
+
+	- 2 to the power of 0 
+		= 1 
+
+	- 2 to the 1st
+
+		= 2
+
+	- 2 squared 
+
+		= 4
+
+	- 2 cubed
+
+		= 8 
+
+	- 2 to the 4th
+
+		= 16 
+
+	- 2 to the 5th
+
+		= 32
+
+	- 2 to the 6th
+
+		= 64
+
+
+	- 2 to the 7th
+
+		= 128
+
+![Alt](binary_example_six.png)
+
+- These are the first places in a binary number. 
+
+- If we can remember those numbers (even just the first 4 is useful) 
+
+- The image below illustrates a table as a template for referencing the place value for binary numbers 
+
+- Therefore each place can be occupied by a 0 or a 1
+
+![Alt](binary_example_seven.png)
+
+## 1st Example - 1001
+
+- If we take the binary number 1001 as an example
+
+![Alt](binary_example_eight.png)
+
+
+- We can see that we have is :
+
+		8 + 1
+
+- This is because we have 0’s in the 4 and 2 place. 
+
+- We have 1 in the 8 place. 
+
+- And 1 in the 1 place. 
+
+- This is just 8 + 1 = 9
+
+![Alt](biinary_example_nine.png)
+
+- Therefore, the binary number 1001 is equal to 9 in decimal or base 10. 
+
+## 2nd Example - 1100
+
+- If we take the binary number 1100 as an example
+
+![Alt](binary_example_ten.png)
+
+- We can see that we have is :
+
+		8 + 4
+
+- This is because we have a 1 in the 8 place and a 1 in the 4 place. 
+
+- This is just 8 + 4 = 12
+
+![Alt](binary_example_eleven.png)
+
+- Therefore, the binary number 1100 is equal to 12 in decimal or base 10. 
