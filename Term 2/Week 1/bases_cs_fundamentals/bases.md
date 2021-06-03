@@ -162,7 +162,7 @@
 
 # Converting from Binary to Decimal 
 
-- Another way to think about determine the place value of a digit in a number is just converting from the number system (binary in these examples) to decimal. 
+- Another way to think about determining the place value of a digit in a number is just converting from the number system (binary in these examples) to decimal. 
 
 - We do this because then we can make sense of the number given our brains are not used to thinking in binary or hexadecimal or base 5 etc. 
 
