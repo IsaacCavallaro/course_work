@@ -28,7 +28,7 @@
 
 # Create the menu_item and menu model
 
-menu_item.rb
+## menu_item.rb
 
 - initialised with a name and a cost.
 
@@ -40,7 +40,7 @@ menu_item.rb
 
 	- to_s  -> returns string representation of the item. 
 
-menu.rb
+## menu.rb
 	
 - Initialised with an array of MenuItem.
 
