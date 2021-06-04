@@ -361,6 +361,189 @@ Open up terminal and run rspec:
 ![Alt](mvc_thirteen.png)
 
 
+- So now we can add an item!
+
+Next, we need to add a method to get the menu items.
+
+- This method is just going to return out instance variable @menu_items
+
+
+		class Menu
+
+			def initialize 
+				@menu_items = []
+			end
+
+			def add_item(name, price)
+				menu_item = MenuItem.new(name, price) 
+				@menu_items << menu_item
+			end
+
+			def get_items
+				return @menu_items
+			end
+		end
+
+![Alt](mvc_fourteen.png)
+
+# Checking the tests with updated code
+
+
+- Open up terminal and run rspec -fd (-fd just adds the documentation formatting):
+
+		rspec -fd
+
+
+- Now we are passing on our Menu test and we get now add an item (see image below). 
+
+![Alt](mvc_fifteen.png)
+
+- BUT we are failing on get price
+
+- So we also need to add a get price method to our Menu class.
+
+
+		class Menu
+
+			def initialize 
+				@menu_items = []
+			end
+
+			def add_item(name, price)
+				menu_item = MenuItem.new(name, price) 
+				@menu_items << menu_item
+			end
+
+			def get_items
+				return @menu_items
+			end
+
+			def get_price(item_name)
+				@menu_items.each do |item|
+					if item.name == item_name
+						return item.price
+					end
+		
+				end
+			end
+		end
+
+- REMINDER for get_price method: 
+
+		- We get passed an item name.
+
+		- Then we loop through our array of menu items.
+
+		- Then we return the price if we find the item. 
+
+- Then if we don’t find the item lets return nil
+
+
+	class Menu
+
+			def initialize 
+				@menu_items = []
+			end
+
+			def add_item(name, price)
+				menu_item = MenuItem.new(name, price) 
+				@menu_items << menu_item
+			end
+
+			def get_items
+				return @menu_items
+			end
+
+			def get_price(item_name)
+				@menu_items.each do |item|
+					if item.name == item_name
+						return item.price
+					end
+		
+				end
+			end
+			return nil
+		end
+
+- NOTE: If we do validation properly, we should not come into this case.
+
+- BUT if we have a loop in our method and we DON’T have an explicit return…
+
+- By default this will return the last item in this array (which is just a bit strange and unpredictable). 
+
+- Therefore, explicitly returning a value of nil will prevent this. 
+
+Checking the tests with updated code
+
+- Open up terminal and run rspec -fd 
+
+		rspec -fd
+
+- Now all of the tests should pass (see image below):
+
+![Alt](mvc_sixteen.png)
+
+- So now we have implemented:
+
+	- Menu
+
+	-MenuItem
+
+- Lets go back to our plan and double check we have covered everything for menu and menu item.
+
+# Checking plan of implementation
+
+## menu_item.rb
+
+- initialised with a name and a cost. (CHECK)
+
+- Provides methods. (CHECK)
+	
+	- name  -> returns the item name. (CHECK)
+
+	- price  -> return the item price. (CHECK)
+
+	- to_s  -> returns string representation of the item. (CHECK)
+
+## menu_.rb
+	
+- Initialised with an array of MenuItem. (CHECK)
+
+- Provides methods. (CHECK)
+
+	- get_items  -> returns the array of menu items. (CHECK)
+
+	- add_item -> adds an item to the menu. (CHECK)
+
+	- item_cost(name) -> returns the cost of the item with the specified names. (CHECK)
+
+
+- Now we are done implementing our menu item and menu models!
+
+- Now lets move onto our order model. 
+
+
+# Order model
+
+## Order.rb
+
+- Initialised with an empty hash of order items.
+
+- Provides methods.
+
+	- items  -> returns the hash of ordered items.
+
+	- add(item, quantity)  -> adds an item with the specified quantity to the order. 
+
+
+
+## NOT FINISHED UP TO 12:55 in the video: MVC- MODELS
+
+
+
+
+
+
 
 
 
