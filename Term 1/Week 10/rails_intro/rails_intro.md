@@ -57,3 +57,216 @@
 - It does however require a larger learning curve at the beginning because you need to become familiar where everything is located and the convention that is being used. 
 
 - In any case, to use a system in which most things are pre-configured is always more productive than to use a completely open system in which you have to set all rules and take all decisions. 
+
+# Apps built on Rails
+
+
+- Airbnb
+
+- Spotify 
+
+- Twitter
+
+More can be found at:
+
+https://stackshare.io/
+
+# Stackshare 
+
+- Stackshare is a website that shows all the tools that are being used to build any app. 
+
+- For example, if you visit airbnb 
+
+https://stackshare.io/airbnb/airbnb
+
+- You can see airbnb uses JavaScript, it uses Rails, Ruby, Sass (to name a few)
+
+
+- You can look up almost any company  on stackshare and see what are the different tools they use.
+
+- This is particularly useful when we are applying for jobs etc. 
+
+- You can also add a language in the search bar and find companies that use these languages or tools. 
+
+# Create a Rails app
+
+- To create a Rails app, in your terminal type:
+
+		rails new (app name) -d postgresql
+
+- For example if you want your app to be called myAPP, the command would be:
+
+
+		rails new myApp -d postgresql
+
+    - NOTE: don’t use any spaces in the name of your app.
+
+    - the dash d is an argument that we pass which refers to the database that you want to choose (we will use postgresql).
+
+    - If you don’t pass the dash d argument, rails will by default execute a database called sqlite (which is a lite version or postgres).
+
+- After running the command 
+
+		rails new myApp -d postgresql
+
+- You will wait will Rails generates an app and you an notice it is creating a whole bunch of folders and files for us. 
+
+- This may take a couple of minutes. 
+
+- When it is finished you will see in the terminal 
+
+		webpacker successfully installed
+
+- You can check this be entering the list command in your terminal: 
+
+
+		ls
+
+- This will return your new app directory. 
+
+- Then change into your app directory: 
+
+
+		cd myApp
+
+- Then open in Visual Studio Code:
+
+
+		code . 
+
+- This should open your app in visual studio code/
+
+- If for some reason this does not work, you may have you manually create a path in VS code. 
+
+- Open VS code and enter:
+
+
+		command + shift + p
+
+- Then search for:
+
+		Shell Command: Install ‘code’ command in PATH
+
+- Then close and open VS code from the terminal and try again.
+
+
+# Looking at the files and directories of a Rails app
+
+
+- If you look on the left of VS code you will see all of the files and folders rails has automatically created. 
+
+- When you learn Rails for the first time it can be difficult to understand which files are present where and what is the use case of each of these folders and files.
+
+- We will be mostly using the folders:
+
+	- app
+
+	- config
+
+	- db (database)
+
+- These are the three folders that you will be mostly modifying the code. 
+
+- The rest are used to support your app.
+
+## App/ 
+
+- Contains the models, controllers, views, helpers, mailers, channels, jobs and assets for your app. 
+
+
+## Bin/
+
+
+- Contains the rails script that starts your app and can contain other scripts you use to setup, update, deploy or run your application. 
+
+## Config/
+
+- Configure your application’s routes, database and more. 
+
+
+## Config.ru
+
+- Rack configuration for Rack based servers used to start the application. For more info on Rack, see the Rack website.
+
+
+## db/
+
+- Contains your current database schema, as well as the database migrations. 
+
+
+## Gemfile, Gemfile.lock
+
+
+- These files allow you to specify what gem dependencies are needed for your Rails application. These files are used by the Bundler gem.
+
+
+## lib/
+
+- Extended modules for you application. 
+
+## log/
+
+- Application log files.
+
+## package.json
+
+- This file allows you to specify what npm dependencies are needed for your Rails application. This file is used by Yarn. 
+
+## public/
+
+- The only folder seen by the world as-is. Contains static files and compiled assets. 
+
+## Rakefile
+
+- This file locates and loads tasks that can be run from the command line. The task definitions are defined throughout the components of Rails. 
+
+- Rather than changing the Rakefile, you should add your own tasks by adding files to the lib/tasks directory of your application.
+
+## README.md
+
+- This is a brief instruction manual for your application. You should edit this file to tell others what your application does, how to set it up and so on. 
+
+## test/
+
+- Unit tests, fixtures and other test apparatus. 
+
+## tmp/
+
+- Temporary files (like cache and pid files)
+
+## vendor/
+
+- A place for all third party code. In a typical Rails application, this includes vendored gems.
+
+## .gitignore/
+
+- This file tells git which files (or patterns) it should ignore. See GitHub - Ignoring files for more info.
+
+## .ruby-version/
+
+- This file contains the default ruby version. 
+
+## Rails commands
+
+- Command to create a new rails app:
+
+		rails new appName -d postgresql
+
+- Command to start a new rails app:
+
+		rails s
+
+- This boots up puma which is the web server Ruby on Rails comes pre-configured for. 
+
+# What is a web server?
+
+- A web server allows a directory within our machine to be accessible by the network (internet in most cases). 
+
+- This is how we can host websites and web apps that are accessible anyway in the world. 
+
+- Within the output of the web server in the console you should see which address it is listening on.
+
+- By default it is:
+
+
+		localhost:3000
