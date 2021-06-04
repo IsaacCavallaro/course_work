@@ -6,9 +6,9 @@
 
 # What is a base?
 
-- A set of digits used to express numeric values
+- A set of digits used to express numeric values.
 
-- In any base we have as many digits as the base number
+- In any base we have as many digits as the base number.
 
 - in base 10, we have digits:
 
@@ -78,7 +78,7 @@
 
 # Table representation
 
-￼![Alt](binary_table_one_to_five.png)
+![Alt](binary_table_one_to_five.png)
 
 
 # Place Values - Decimal 
@@ -87,16 +87,16 @@
 
 - In base 10 we can think of the places as:
 
-- The 1’s place
+	- The 1’s place
 
-- The 10’s place
+ 	- The 10’s place
 
-- The 100’s place
+ 	- The 100’s place
 
-- The 1000’s place (and so on)
+ 	- The 1000’s place (and so on)
 
 
-- Each one of these places is an increasing power of 10 
+- Each one of these places is an increasing power of 10. 
 
 - The below image illustrates the example of the digit:
 
@@ -115,7 +115,7 @@
 
 - In binary (and in every other base) place values are exactly the same in that the digit value gets multiplied by its place in the number.
 
-- The only difference with binary is that the digit is always either a 0 or a 1 . 
+- The only difference with binary is that the digit is always either a 0 or a 1. 
 
 - Unlike decimal (base 10) where we have increasing powers of 10, in binary (base 2) we have increasing powers of 2. 
 
@@ -151,28 +151,34 @@
 
     - In the 32’s place we have 2 to the 5th power (which is  just 2 x 2 x 2 x 2 x 2 = 32)
 
-- The way the we would calculate the place value of a digit in a binary number is the same way as we would in base 10. 
+- The way the we would **calculate the place value** of a digit in a **binary number** is the **same way as we would in base 10**. 
 
 - If we wanted to know the place value of the first 1 in the binary number 101100 (example image):
 
-	-  We take the 1 and multiply it by its place value (which is 32 in this example)
+	-  We take the 1 and..
+	
+	- Multiply it by its place value (which is 32 in this example).
 
-	- Therefore its place value is 1 x 32 = 32 (in decimal)
+	- Therefore its place value is:
+	
+	- 1 x 32 = 32 (in decimal).
 
 
 # Converting from Binary to Decimal 
 
 - Another way to think about determining the place value of a digit in a number is just converting from the number system (binary in these examples) to decimal. 
 
-- We do this because then we can make sense of the number given our brains are not used to thinking in binary or hexadecimal or base 5 etc. 
+- We do this because then **we can make sense of the number** given our brains are not used to thinking in binary or hexadecimal or base 5 etc. 
 
-- We are used to thinking in base 10. 
+- **We are used to thinking in base 10**. 
 
 - When we hear a number and it is expressed in base 10, we can have some idea of what that number represents. 
 
 - So when we are calculating the value of a number in another base, what we are talking about is “how do we represent that number in base 10?”
 
-- We can convert any number in any base to base 10 using the same method that we used above. 
+- We can convert ANY NUMBER in ANY BASE to base 10 using the **same method that we used above.** 
+
+## Method for converting binary to decimal.
 
 - The method is:
 
@@ -193,18 +199,18 @@
 
 ## NOTE
 
-- Even binary number will ALWAYS end in a 0
+- EVEN binary number will ALWAYS end in a 0.
 
-- Odd binary numbers will ALWAYS end in a 1 
+- ODD binary numbers will ALWAYS end in a 1.
 
 - This is because the final number in a binary digit is in the 1’s place so if we have a 1 there we will have an odd number and if we have a 0 there we will have an even number.
 
-- Any number raised by the power of 0 is 1. 
+- **Any number raised by the power of 0 is 1.** 
 
 
 # ANOTHER BINARY EXAMPLE
 
-- Binary number is:
+- Example Binary number is:
 
 	10110
 
@@ -376,7 +382,7 @@ OR
 # Converting from decimal to binary  - method 1
 
 
-Example: 19 in base 10
+## Example: 19 (in base 10)
 
 
 - In this case we basically do the opposite from covenanting a binary to a decimal. 
@@ -426,14 +432,14 @@ Example: 19 in base 10
 
 # Another example of converting from decimal to binary  - method 1
 
-## Example: 143 in base 10
+## Example: 143 (in base 10)
 
 
 - Step One:
 	
 	- “What is the largest power of 2 that goes into 143?” - Put a 1 in that place. 
 
-	- In this example(143 in base 10) 128 is the largest power of 2 - So we put a 1 in that place (see image below). 
+	- In this example (143 in base 10) 128 is the largest power of 2 - So we put a 1 in that place (see image below). 
 
 	- By putting a 1 in that place, we now know that we are adding 128.
 
