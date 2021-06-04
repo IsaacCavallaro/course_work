@@ -439,7 +439,7 @@ Next, we need to add a method to get the menu items.
 - Then if we don’t find the item lets return nil
 
 
-	class Menu
+	        class Menu
 
 			def initialize 
 				@menu_items = []
@@ -473,7 +473,7 @@ Next, we need to add a method to get the menu items.
 
 - Therefore, explicitly returning a value of nil will prevent this. 
 
-Checking the tests with updated code
+# Checking the tests with updated code
 
 - Open up terminal and run rspec -fd 
 
@@ -487,7 +487,7 @@ Checking the tests with updated code
 
 	- Menu
 
-	-MenuItem
+	- MenuItem
 
 - Lets go back to our plan and double check we have covered everything for menu and menu item.
 
