@@ -80,19 +80,19 @@ Creating MVC and spec directories
 
 1. Make a controllers directory:
 
-	mkdir controllers
+	    mkdir controllers
 
 2. Make a models directory:
 
-	mkdir models
+	    mkdir models
 
 3. Make a views directory:
 
-	mkdir views
+	    mkdir views
 
 4. Make a spec directory:
 
-	mkdir spec
+	    mkdir spec
 
 Creating directories within the models directory 
 
