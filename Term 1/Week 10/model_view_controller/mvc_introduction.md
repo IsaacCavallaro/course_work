@@ -147,19 +147,19 @@ Open up terminal and run rspec:
 
 - This fails because even though we have defined the files for our models, we haven’t actually added any code yet. 
 
-- Therefore we should got to MenuItem and try and get the test to pass. 
+- Therefore we should got back to **MenuItem** and try and get the test to pass. 
 
 ![Alt](mvc_five.png)
 
 # Getting MenuItem test to pass
 
-- Define a class called MenuItem
+- Define a class called **MenuItem**
 
 		class MenuItem
 
 		end
 
-- As mentioned above, in the initialised we will pass a **name** and a **price**. 
+- As mentioned above, in the initialised, we will pass a **name** and a **price**. 
 - And we will set our **instance variables** to those arguments passed in (name, price in this case).
 
 
@@ -172,7 +172,7 @@ Open up terminal and run rspec:
 
 		end
 
-- Then we were also going to override the to_s method to get a nicely formatted string representation of our MenuItem. 
+- Then we were also going to override the to_s method to get a nicely formatted string representation of our **MenuItem.** 
 - (in the video the tutor copies the code from the previous app). 
 
 
@@ -252,7 +252,9 @@ Open up terminal and run rspec:
 
 # Checking the tests with updated code
 
-- Open up terminal and run rspec -fd (-fd just adds the documentation formatting):
+- Open up terminal and run rspec -fd 
+
+- (-fd just adds the documentation formatting):
 
 		rspec -fd
 
@@ -264,17 +266,17 @@ Open up terminal and run rspec:
 
 ![Alt](mvc_ten.png)
 
-- This fails because we haven’t implemented Menu yet.
+- This fails because we haven’t implemented **Menu** yet.
 
-- Lets check out spec file for our Menu tests to see what we need to implement (see image below).
+- Lets check out spec file for our **Menu tests** to see what we need to implement (see image below).
 
 ![Alt](mvc_twelve.png)
 
-- In this test we try to add our menu items.
+- In this test we try to **add our menu items**.
 
-- To fix this., lets implement our menu class and see if we can get this test to pass.
+- To fix this., lets implement a **Menu class** and see if we can get this test to pass.
 
-- Go to your menu.rb file and add a menu class:
+- Go to your menu.rb file and add a Menu class:
 
 		class Menu
 
@@ -301,7 +303,7 @@ Open up terminal and run rspec:
 			end
 		end
 
-- The next thing we will do is create an add_item method, which will take name and price as arguments.
+- The next thing we will do is create an add_item method, which will take **name** and **price** as arguments.
 
 - This will add an item to our menu.
 
@@ -318,7 +320,7 @@ Open up terminal and run rspec:
 		
 		end
 
-- Now, when we add an item to our menu, we actually create a menu item from it. 
+- **Now, when we add an item to our menu, we actually create a menu item from it.** 
 
 - So lets bring in our menu_item class with require relative 
 
@@ -342,7 +344,7 @@ Open up terminal and run rspec:
 		end
 
 
-- Then we can just push that into our empty array:
+- Then we can just **push** that into our **empty array**:
 
 
 		class Menu
@@ -361,11 +363,11 @@ Open up terminal and run rspec:
 ![Alt](mvc_thirteen.png)
 
 
-- So now we can add an item!
+- **Now we can add an item!**
 
-Next, we need to add a method to get the menu items.
+Next, we need to **add a method** to get the **menu items**.
 
-- This method is just going to return out instance variable @menu_items
+- This method is just going to return our instance variable @menu_items:
 
 
 		class Menu
@@ -389,18 +391,20 @@ Next, we need to add a method to get the menu items.
 # Checking the tests with updated code
 
 
-- Open up terminal and run rspec -fd (-fd just adds the documentation formatting):
+- Open up terminal and run rspec -fd 
+
+- (-fd just adds the documentation formatting):
 
 		rspec -fd
 
 
-- Now we are passing on our Menu test and we get now add an item (see image below). 
+- Now we are **passing on our Menu test** and we can now **add an item** (see image below). 
 
 ![Alt](mvc_fifteen.png)
 
-- BUT we are failing on get price
+- BUT we are **failing on get price**.
 
-- So we also need to add a get price method to our Menu class.
+- So we also need to add a **get price method** to our **Menu class.**
 
 
 		class Menu
@@ -428,7 +432,7 @@ Next, we need to add a method to get the menu items.
 			end
 		end
 
-- REMINDER for get_price method: 
+- **REMINDER for get_price method:**
 
 		- We get passed an item name.
 
