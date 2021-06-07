@@ -21,7 +21,7 @@ A link to the lesson can be found [here.](https://ait.instructure.com/courses/35
 
         rails g controller cafe
 
-- g stands for generate and by running this command we will create a controller for our cafe. 
+- g stands for **generate** and by running this command we will create a controller for our cafe. 
 
 - After this command is executed, rails will create an app folder with a controllers folder  and a cafe_controller.rb file 
 
@@ -69,5 +69,9 @@ Run the rails app
 		rails s 
 
 - The s stands for server
+
+- Now we can switch tot he browser see what we have at localhost: 3000
+
+
 
 

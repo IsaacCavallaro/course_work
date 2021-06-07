@@ -480,4 +480,159 @@ OR
 	10001111
 
 
+# Method 2 Decimal to Binary - Divide method
+
+
+## Example Number 19 (base 10)
+
+
+-  We are going to divide this number by the base until we can’t divide it anymore. 
+
+- We start with 19 and we divide that by 2 because that is the base we are going to cover to.
+
+- 19 divided by 2 is 9 and we keep track of the remainder (1) 
+
+
+![Alt](method_two.png)
+
+- In base 2 our remainder is always going to be 1 or 0. 
+- Either it is an even number and it divides evenly 
+- OR
+- it is an odd number and it has one left over. 
+
+- Then after each step we ask ourselves the question….
+
+- “Can we divide “it” (our quotient which is number 9 in this example) by 2 again?” (number 9 in this example)
+
+![Alt](method_two.2.png)
+
+- “is it bigger than or equal to 2?”
+
+- In this case it is so we:
+
+	-  take the 9 and divide by 2 again.
+
+	- in this case we get 4 because 4 x 2 is 8 with a remainder of 1
+
+ ![Alt](method_two.3.png)
+
+ - then we ask the question again:
+
+- “Can we divide it by 2 again?” (number 9 in this example)
+
+- “is it bigger than or equal to 2?”
+
+- And because 4 is bigger than 2, we divide it by 2 again. 
+
+
+ ![Alt](method_two.4.png)
+
+- This time we get a remainder of 0. 
+
+- BUT 2 can still be divided by 2.
+
+- So, we will continue dividing our quotient (9) until it is LESS THAN the base we are trying to convert to. 
+
+- So we say 2 divided by 2 which gives our 1 with a remainder of 0. 
+
+ ![Alt](method_two.5.png)
+
+
+- Now we are down to 1, and this number can no longer by divided by 2 and it is less than 2.
+
+- This means we are done. 
+
+- So our answer starts with the last quotient (which is a 1 in this example).
+
+ ![Alt](method_two.6.png)
+
+
+- Then we go backwards through the remainders 
+
+- First will be 0:
+
+
+![Alt](method_two.7.png)
+
+- Next will be 0:
+
+![Alt](method_two.8.png)
+
+- Next will be 0:
+
+![Alt](method_two.9.png)
+
+
+- Next will be 1:
+
+![Alt](method_two.10.png)
+
+
+- Next will be 1:
+
+![Alt](method_two.11.png)
+
+- So, 19 (in base 10) is:
+
+		10011 (in base 2)
+
+
+- So this is another method for converting a decimal to base 2.
+
+    - We divide until the final quotient is less than the base. 
+
+    - Then we keep track of the remainders.
+
+    - Then the answer is formed by starting with the last quotient 
+
+    - Then we add on the remainders in reverse order. 
+
+    - Then that will give us our answer in the other base. 
+
+
+# Hexadecimal (base 16)
+
+
+- Base 16 is interesting because it has 16 digits. 
+
+- In hexadecimal, we start with 0 through to 9 (just like in base 10) but then we have to start using letters. 
+
+![Alt](hex_one.png)
+
+- In hex, the decimal:
+
+	- Number 10 = A
+
+	- Number 11 = B
+
+	- Number 12 = C
+
+	- Number 13 = D
+
+	- Number 14 = E
+
+	- Number 15 = F
+
+- Why do we only go up to 15? Because we start from 0!
+
+- So our final digit represents the digit 15 
+
+- So we go from 0 through to F in hexadecimal. 
+
+![Alt](hex_two.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
