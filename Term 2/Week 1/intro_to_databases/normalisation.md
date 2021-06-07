@@ -82,3 +82,62 @@
     - Single Values in each column. 
 
 - If we look at our current model of our customers table (see image below) 
+
+![Alt](normal_form_one.png)
+
+- We can see that in the address column, we have multiple pieces of information here (multiple pieces of data).
+
+- They are just addresses which are composed of:
+
+    - A street number
+    - A street name
+    - A suburb or city
+    - A state
+    - A postcode
+
+- So there is lots of pieces of information that we are storing in this one column. 
+
+- This breaks the BREAKS the first normal form rule. 
+
+
+# Why is this a problem?
+
+- Think about updating an address or think about querying based on address.
+
+- Lets say in our particular application we for some reason maybe this is the store owners view of the application…
+
+- And say they want to list their customers by suburb or list their customer by postcode. 
+
+- How would you query the customers table in order to get that data if we only want to show customers in QLD for example?
+
+- If we store the entire address in a single column, that is going to make it tricky to query the customers that are only from QLD.
+
+- On the other hand, if we follow the first normal form and we seperate out the address column in 5 separate columns.
+
+- So that we are storing each piece of data as a seperate column, now querying which customers are in QLD is as easy as performing one simple query. 
+
+- That query is:
+
+    - For where state is QLD.  
+
+- That would quickly and easily get us the data that we need. 
+
+![Alt](normal_form_two.png)
+
+- What we are trying to do in the first normal form is to:
+    -  Make sure that each of our columns in our table represent a SINGLE piece of information &
+    - That the none of the information is repeated in our table. 
+
+
+More Columns is not bad
+
+- A lot of times having more columns makes it easier to query and manipulate thee data.
+
+- Therefore more efficient. 
+
+
+
+Example 2 - First Normal Form (1NF) Rules
+
+NOT FINISHED 9 mins 51
+
