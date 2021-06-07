@@ -619,17 +619,185 @@ OR
 
 - So we go from 0 through to F in hexadecimal. 
 
+# Converting Hexadecimal to Decimal 
+
 ![Alt](hex_two.png)
 
 
+- Converting hexadecimal tp decimal is just liking converting from ANY base to decimal. 
+
+- A lot of times hex numbers are represented with this kind of notation:
+
+	- They start with the number 0 and then an x 
+
+	- This is just a notation that illustrates this IS a hexadecimal number.
 
 
+- In the example above, the hexadecimal number is 2CB and we want to convert it to base 10. 
 
 
+    - So just like before, we write up the number (in this example it is 2CB)
+
+    - Then we pop it in a table with the place values for hexadecimals (place 16)
+
+- So in the first place (the right most place) we have:
+
+	- The 1’s place which is 16 to the 0 power.
+
+	- The 16’s place which is 16 to the 1st power.
+
+	- the 256’s place which is 16 to the 2nd power.
+
+    - To convert this number to decimal (2CB) we have to 
+
+        - multiply 2 by its place which is 256 
+
+        - then add to that 
+
+        - C multiplied by its place value 16. 
+
+        - So we have to remember what C is in hex (which is 12). 
+
+        - Then we add B multiplied by 1 (B in hex is 11). 
 
 
+![Alt](hex_three.png)
 
 
+= 512 + 192 + 11 = 715
+
+- If we have a larger number, than we just need to multiply with increasing value places. 
+
+
+# Hexadecimal color ##RRGGBB 
+
+- Hex colors are represented by a hash symbol and typically have 6 digits (also can be 3 digits). 
+
+![Alt](hex_color.png)
+
+- The first two digits represent the RED COLOR component.
+
+- The second two digits represent the green component.
+
+- The last two reprint the Blue component. 
+
+
+# Converting Hexadecimal color to RGB
+
+- Given RGB format is a decimal format, to covert a hex color to RBG we just need to:
+
+	- Convert each hex value into decimal.
+
+## Example Hex color (see image above)
+
+01 -Red
+
+22 - Green
+
+FF - Blue
+
+## Step 1: 
+
+- Start with RED which is: 01
+
+- 01 in hex is just 1 in base 10 
+
+- So we just have 1 x 16 to the 0 power which = 1 in base 10
+
+
+![Alt](hex_color_two.png)
+
+## Step 2: 
+
+- Next we look at the GREEN component which is: 22.
+
+- So 22 in hex is 2 x 16 + 2 which = 34 in base 10.
+
+![Alt](hex_color_three.png)
+
+- There 34 is the decimal representation of the hex digit 22. 
+
+
+## Step 3: 
+
+	
+- Next we look at the BLUE component which is: FF (F in hex is 15).
+
+ - We have to multiply 15 by its place which is 16’s place.
+
+- then add to that the 15 that is in the 1’s place.
+
+- Which is 15x 16 + 15 = 255 in base 10.
+
+![Alt](hex_color_four.png)
+
+
+- So the RGB color that represents 0122FF in hex is:
+
+
+		rgb(1, 34, 255)
+
+# Largest Value of any one color? 
+
+- To determine this, we find out what is  the largest digits we can put in those two places. 
+
+	- That would be FF. 
+
+- Therefore FF is the LARGEST value that we can represent for a color component of Red, Green or Blue. 
+
+- In decimal that is 255.
+
+	- In other words 255 is the LARGEST numeric representation in decimal that we can have for a particular color component (Red, Green, Blue). 
+
+# Hex and Binary
+
+
+![Alt](hex_and_binary.png)
+
+
+- An interesting relationship between hex and binary is because hex (base 16) is a power of 2.
+
+- Specifically, it is 2 to the 4th power. 
+
+- What this means is that:
+
+	- 1 hex digit (which can represent up to 15) is equivalent to 4 binary digits. 
+
+- So if we look at the table in the image above, we have hex numbers in the top row from 0 too F. 
+
+- Below we have the binary equivalents.
+
+- For example:
+
+	- The hex 0 is 0000 in binary. 
+
+	- All the way up to the largest binary that we can represent in 4 digits, which is 15 (1111). 
+
+
+- Example hex number: 0x5A3 (which is just 5A3)
+
+- What we can do is convert each one of these digits into binary to come up with a binary representation of this hex number. 
+
+- NOTE: we can only do this between hex and binary.
+
+	- We can’t do this between decimal and binary or ..
+
+	- Hex and another base. 
+
+	- We can ONLY DO THIS Because each base are a power/root of each other. 
+
+- In this example we get the binary representation of 5 which is: 
+
+		0101
+
+- Then the binary repression of A (remembering that A is 10 in hex) which is:
+
+
+		1010
+
+- Then we get the binary representation of 3 which is:
+
+		0011
 
 
 
