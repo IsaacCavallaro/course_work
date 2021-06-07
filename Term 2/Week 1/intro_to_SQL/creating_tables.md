@@ -77,7 +77,7 @@ Drop database
 
 - What we do inside of the parenthesis is we:
 
-		- define our columns. 
+	- define our columns. 
 
 - Now we forgot to give our table a name!
 
