@@ -107,7 +107,7 @@ ETC
 
 - id will represent some kind of number (could be 1 could be 2 could be 10 etc)
 
-- Let’s now define out to key value pair
+- Let’s now define our key value pair
 
 - This will go to the projects folder 
 
@@ -315,4 +315,177 @@ ETC
 - Show if we save this file 
 
 ![Alt](show_twenty_nine.png)
+
+- Then change our route back to 1
+
+
+![Alt](show_thirty.png)
+
+
+- now we are just accessing 1 in our terminal
+
+![Alt](show_thirty_one.png)
+
+# Coming back to our find block
+
+![Alt](show_thirty_two.png)
+
+- We are finding a project based on its id in the hash.
+
+![Alt](show_thirty_three.png)
+
+![Alt](show_thirty_four.png)
+
+- Then we are going to find a particular project:
+
+![Alt](show_thirty_five.png)
+
+- Based on the param that we are working we:
+
+![Alt](show_thirty_six.png)
+
+
+- So we can copy this value and paste into our find (see image below):
+
+![Alt](show_thirty_seven.png)
+
+- We can then store the result of the find in a variable (found_project in this example):
+
+![Alt](show_thirty_eight.png)
+
+- Then we can print found_project
+
+
+		p found_project
+
+
+- Send the request again:
+
+
+		localhost:3000/projects/1
+
+
+- And at the moment the return of our found_project is nil
+
+
+![Alt](show_thirty_nine.png)
+
+- The reason that it is nil is because:
+
+-  The param we are working with:
+
+![Alt](show_forty.png)
+
+- This id that we are pulling out of params is actually a string.  
+
+
+- Where as the project[:id] 
+
+![Alt](show_forty_two.png)
+
+- that we are getting from the hash:
+
+- is an integer. 
+
+- So we are comparing an integer to a string. 
+
+- In this case we have to do some explicit type casting and converting the string to an integer. 
+
+
+![Alt](show_forty_three.png)
+
+- Then we can save  our file and refresh our browser 
+
+- Now we are pulling out one single hash.
+
+
+![Alt](show_forty_four.png)
+
+- We can confirm this by sending back that hash to the client. 
+
+
+# Sending back hash to client:
+
+
+- Instead of plain text we can render JSON and send back the found_project to the client side. 
+
+![Alt](show_forty_five.png)
+
+- Lets restart our server:
+
+		rails s
+
+- refresh our browser 
+
+![Alt](show_forty_six.png)
+
+- And now we are getting just the first project of id 1.
+
+- If we pass in 2 the browser:
+
+
+![Alt](show_forty_seven.png)
+
+- We will get the second project of id 2:
+
+
+![Alt](show_forty_eight.png)
+
+
+- If we pass in 3 we will get a return of null:
+
+![Alt](show_forty_nine.png)
+
+
+- This is because we don’t have a project with an id of 3.
+
+- We only have projects with an id of 1 and 2.
+
+![Alt](show_fifty.png)
+
+# Params
+
+![Alt](show_fifty_one.png)
+
+- Params is a special method that we have access to in each controller action
+
+- The id represents a key in our params.
+
+![Alt](show_fifty_two.png)
+
+- The name of this key depends on what we have named it in our routes.rb folder.
+
+![Alt](show_fifty_three.png)
+
+- Therefore the id in our routes folder is very important because:
+	
+	- Whatever we have in our params depends on whatever name we use in our route.
+
+
+## For example:
+
+- We could name it elephant:
+
+![Alt](show_fifty_four.png)
+
+- We then change the name in our projects_controller.rb folder:
+
+![Alt](show_fifty_five.png)
+
+- We can then run our rails server:
+
+
+		rails s
+
+- The send a request again with a valid project id (1 in this case)
+
+- And we can see that things still work.
+
+![Alt](show_fifty_six.png)
+
+- We can see this is updated in our terminal too:
+
+![Alt](show_fifty_seven.png)
+
+- Therefore the key that we have access to in params is dependant on the name that we use in our routes. 
 
