@@ -16,4 +16,5 @@
 	- Add a constraint to a column 
 	- Rename a table
 
-not finished 3 mins
+
+
