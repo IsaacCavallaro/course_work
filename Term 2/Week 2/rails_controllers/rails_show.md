@@ -100,7 +100,219 @@ ETC
 
     - A colon and then the placeholder name for this particular route (id in this example)
 
+
+		get “/projects/:id”
+
 ![Alt](show_nine.png)
 
+- id will represent some kind of number (could be 1 could be 2 could be 10 etc)
 
-Not finished video
+- Let’s now define out to key value pair
+
+- This will go to the projects folder 
+
+- remembering that the first part of the to: is the name of the controller (projects in this example)
+
+- The second part is the name of the controller action - separated with a #
+
+- In this example we are using show as the controller action (a convention in Rails)
+
+
+		get “/projects/:id”, to: “projects#show”
+
+![Alt](show_ten.png)
+
+## Show action 
+
+
+- The show action is for sending back only one particular resource (one project in this example)
+
+
+
+## Checking show action
+
+
+- Let’s type out our url (see images below) into our browser and see what we get.
+
+![Alt](show_eleven.png)
+
+- We are getting an error:
+
+
+![Alt](show_twelve.png)
+
+- The error is pretty clear and is an easy fix.
+
+
+- First lets go to our projects_controller.rb file
+
+![Alt](show_thirteen.png)
+
+
+- All we have to do is define the show action
+
+
+		def show
+		end
+
+
+![Alt](show_fourteen.png)
+
+
+
+- Now let’s refresh our browser.
+
+- Add we see a different error (see image below):
+
+
+![Alt](show_fifteen.png)
+
+- Now it’s saying that the show action is not sending back a response. (that’s what missing a template refers to).
+
+- We can fix this by using the render key word and add some plain text to see it’s working
+
+
+		def show
+			render plain: “sending back 1 project”
+		end
+
+![Alt](show_sixteen.png)
+
+- Now let’s refresh the browser to see if this renders.
+
+![Alt](show_seventeen.png)
+
+
+- Although it is working, it is not very useful given we are just sending back plain text and not being back a project from our array of hashes. 
+
+![Alt](show_nineteen.png)
+
+# Finding item
+
+
+- First step is to grab our array of hashes.
+
+
+- This won’t be very DRY but we can refactor later. 
+
+
+![Alt](show_twenty.png)
+
+## NOTE: show is for sending back only one resource. 
+
+
+- A method we can use to find one item in an array is:
+
+
+		.find
+
+
+- We can call the dot find method on an array (in this case it’s our projects array)
+
+
+		projects.find	 
+
+- Find then takes a block:
+
+
+		projects.find do |project|
+
+		end
+
+- Within the do block we are going to find a project based on it’s id
+
+- Because each project is a hash, we will use the hash notation:
+
+
+
+		projects.find do |project|
+		
+			project[:id]
+		
+		end
+
+- We want to find the one that is equal to something
+
+
+		projects.find do |project|
+		
+			project[:id] ==something
+		
+		end
+
+![Alt](show_twenty_one.png)
+
+- The “something” is going to represent the number in the url (see image below):
+
+![Alt](show_twenty_two.png)
+
+# Accessing URL path in controller action
+
+
+- We can use a special method params
+
+- If we comment out the block of code we just did and print params
+
+![Alt](show_twenty_three.png)
+
+- We will be able to see that p statement in our terminal.
+
+- Lets restart out rails server
+
+
+		rails s
+
+- Then we will go to the route:
+
+
+		localhost: 3000/projects/1
+
+
+- This will still work
+
+- Then what we can see is our print statement (see image below):
+
+![Alt](show_twenty_four.png)
+
+
+- We printed out params 
+    - params is a special object in which you can access everything in it using the hash notation.
+
+- In this special params object, you can see that there is an id key:
+
+![Alt](show_twenty_five.png)
+
+
+- And it’s value 
+
+![Alt](show_twenty_six.png)
+
+
+- Through this params method we can access the placeholder or the number that we pass into the URL.
+
+- Therefore is this case we pass in 2
+
+![Alt](show_twenty_seven.png)
+
+
+- You will see that the id is the key and 2 is now the value.
+
+![Alt](show_twenty_eight.png)
+
+
+
+# Accessing id value 
+
+- All we would need to do is use the hash notation (square brackets and name of the key):
+
+
+
+		p params[:id]
+
+
+- This will access the value
+
+- Show if we save this file 
+
+![Alt](show_twenty_nine.png)
+
