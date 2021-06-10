@@ -231,3 +231,5 @@ Then refresh our browser.
 - There is no response being sent back so this number 8 line (in the image) is not occuring. 
 
 # Send back a response
+
+- To send back a response from our controller actions we have a number of different ways to do so.
