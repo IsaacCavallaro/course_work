@@ -107,7 +107,7 @@
 
 
 		def create
-			p params
+		  p params
 		end
 
 
@@ -130,7 +130,7 @@
 
 ## We now have:
 
-	- The id
+- The id
 
 ![Alt](query8.png)
 
@@ -154,7 +154,7 @@
 
 
 			def create
-				p params
+			  p params
 			end
 
 
@@ -162,7 +162,7 @@
 
 
 			def create
-				p params[:name]
+			  p params[:name]
 			end
 
 - To double check that works we can send a post request through postman:
