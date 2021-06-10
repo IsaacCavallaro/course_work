@@ -22,7 +22,7 @@
 
 # Sending data from client side to web sever/rails app
 
-- Often you would do this through a **form like a html form.**s
+- Often you would do this through a **form like a html forms**
 
 - We are currently NOT working with forms because we don’t yet have a **view.**
 
@@ -237,10 +237,10 @@
 - We have access to the @projects instance variable in our create method because….
 
 
-	def create
-		  new_project = {id: params[:id], name: params[:name], github_status: params[:githubstatus } 
-		  p new_project
-	end
+		def create
+			new_project = {id: params[:id], name: params[:name], github_status: params[:githubstatus } 
+			p new_project
+		end
 
 **THE BEFORE ACTION IS RUNNING before our create method!**
 
@@ -307,7 +307,7 @@ And it is **reading in the JSON file:**
 - In order to write this new array into our JSON file we are going to define a new method
 
 
-- Note: Our array is @projects
+## Note: Our array is @projects
 
 
 		def write_projects(projects)
@@ -315,9 +315,9 @@ And it is **reading in the JSON file:**
 
 		end 
 
-- The method will take projects as aim argument (which is our newly created array)
+- The method will take projects as an argument (which is our newly created array)
 
-- The actually method is going to be similar to the read JOSN method.
+- The write method is going to be similar to the read JOSN method.
 
 - Instead of File.read we are going to use File.write
 
@@ -368,7 +368,7 @@ And it is **reading in the JSON file:**
 
 ![Alt](query21.png)
 
-## So in our create method we have push the new project into our array of hashes:
+## So in our create method we are: pushing the new project into our array of hashes:
 
 
 		@projects << new_project
@@ -410,12 +410,12 @@ And it is **reading in the JSON file:**
 - Lets go to our create method and render some plain text
 
 
-	def create
-	  new_project = {id: params[:id], name: params[:name], github_status: params[:githubstatus } 
-	  @projects << new_project
-	  write_project(@project)
-	  render plain “successfully added to projects!”
-	end
+		def create
+		  new_project = {id: params[:id], name: params[:name], github_status: params[:githubstatus } 
+		  @projects << new_project
+		  write_project(@project)
+		  render plain “successfully added to projects!”
+		end
 
 ![Alt](query24.png)
 
