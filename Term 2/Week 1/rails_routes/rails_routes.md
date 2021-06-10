@@ -70,7 +70,7 @@ Run the rails app
 
 - The s stands for server
 
-- Now we can switch tot he browser see what we have at localhost: 3000
+- Now we can switch to the browser see what we have at localhost: 3000
 
 
 

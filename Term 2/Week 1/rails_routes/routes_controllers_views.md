@@ -97,11 +97,11 @@ A link to the lesson can be found [here.](https://ait.instructure.com/courses/35
 
 		orders#index
 
-- In order to define that in our config/routes.rb file we will require a get method because we want to get all the orders.  
+- In order to define that in our config/routes.rb file we will require a *get* method because we want to get all the orders.  
 
 		get ‘orders’ to: ‘orders#index’
 
-- This index method will render a view from the views directory. 
+- This **index method** will render a **view** from the **views directory**. 
 
 		views/orders.index.html.erb
 
@@ -115,29 +115,29 @@ A link to the lesson can be found [here.](https://ait.instructure.com/courses/35
 
 		orders#show
 
-- Remembering that the orders controller is going to have a show action. 
+- Remembering that the **orders controller** is going to have a **show action**. 
 
-    - In order to define this in our config/routes.rb file we will require a get method because we want to get an order except that path is slightly different than the first example.
+    - In order to define this in our config/routes.rb file we will require a *get* method because we want to get an order except that path is slightly different than the first example.
 
 		
 		get ‘orders/:id to:’orders#show’
 
-- Every time we have a collon in the URL it means that this is a parameter or a param.
+- Every time we have a collon in the URL it means that this is a **parameter** or a **param.**
 
-- We use parameters when we have a list of items (in this example the items are orders but the can be any kind of item) and we want to access just one. 
+- We use **parameters** when we have a **list of items** (in this example the items are orders but the can be any kind of item) and we want to **access just one**. 
 
-- The parameter is the item we want to access. 
+- The **parameter is the item we want to access**. 
 
-- Also, the item must have an ID if we want access to it. 
+- Also, the item must have an **ID** if we want **access to it**. 
 
 
 # Action, Route and View conventions (cont.)
 
-- The route tells the rails server what to display when the user just types in the server URL with no additional path. 
+- The **route** tells the **rails server** what to **display** when the user just types in the server URL with no additional path. 
 
-- In other words, it is the home or index of the application. 
+- In other words, it is the **home** or **index** of the application. 
 
-- The root route is specified in the config/routes.rb with the syntax: 
+- The **root route** is specified in the config/routes.rb with the syntax: 
 
 
 		root to: ‘controller#action’
