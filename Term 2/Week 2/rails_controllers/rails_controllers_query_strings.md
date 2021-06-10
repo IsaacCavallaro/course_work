@@ -173,3 +173,135 @@
 
 ![Alt](query11.png)
 
+## Collect information from Param and store in a variable 
+
+![Alt](query12.png)
+
+		def create
+		  new_project = 
+		end
+
+
+## And we are going to pass a hash with the id that we get from params:
+
+
+
+		def create
+		  new_project = {id: params[:id] } 
+		end
+
+
+## And we are also going to get params name of the project
+
+
+
+		def create
+		  new_project = {id: params[:id], name: params[:name] } 
+		end
+
+## And we are also going to get our GitHub status
+
+
+
+		def create
+		  new_project = {id: params[:id], name: params[:name], github_status: params[:githubstatus } 
+		end
+
+
+
+![Alt](query13.png)
+
+## NOW LETS PRINT NEW_PROJECT 
+
+
+		def create
+		  new_project = {id: params[:id], name: params[:name], github_status: params[:githubstatus } 
+		  p new_project
+		end
+
+
+
+## THEN SEND ANOTHER POST REQUEST
+
+- With the same information in the query string. 
+
+![Alt](query14.png)
+
+- We will see in our logs we have got:
+
+	- A hash with ALL of the values we have sent through as parameters:
+
+# Now that we have this nicely formatted hash we can insert it into our projects  array of hashes
+
+![Alt](query15.png)
+
+- We have access to the @projects instance variable in our create method because….
+
+
+	def create
+		  new_project = {id: params[:id], name: params[:name], github_status: params[:githubstatus } 
+		  p new_project
+	end
+
+**THE BEFORE ACTION IS RUNNING before our create method!**
+
+
+		before_action :read_projects
+
+![Alt](query16.png)
+
+And it is **reading in the JSON file:**
+
+![Alt](query17.png)
+
+# Pushing new project into our array of hashes:
+
+
+- In our **create method**:
+
+        def create
+        new_project = {id: params[:id], name: params[:name], github_status: params[:githubstatus } 
+        p new_project
+        end
+
+
+- We can get rid of p new_project and push new_project into our array of hashes (JSON)
+
+
+	def create
+	  new_project = {id: params[:id], name: params[:name], github_status: params[:githubstatus } 
+	  @projects << new_project
+	end
+
+
+- Now we can print @projects
+
+
+
+	def create
+	  new_project = {id: params[:id], name: params[:name], github_status: params[:githubstatus } 
+	  @projects << new_project
+	  p projects
+	end
+
+
+ - Lets restart our rails server so we can actually see what’s happening:
+
+
+
+		rails s
+
+
+- Send a post request 
+
+![Alt](query5.png)
+
+- In our terminal response we can now see we have 3 hashes 
+
+- including our newly created hash 
+
+![Alt](query18.png)
+
+NOT FINISHED VIDEO: 8:25 
+
+
