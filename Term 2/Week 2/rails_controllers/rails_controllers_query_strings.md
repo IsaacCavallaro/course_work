@@ -260,8 +260,8 @@ And it is **reading in the JSON file:**
 - In our **create method**:
 
         def create
-        new_project = {id: params[:id], name: params[:name], github_status: params[:githubstatus } 
-        p new_project
+          new_project = {id: params[:id], name: params[:name], github_status: params[:githubstatus } 
+          p new_project
         end
 
 
@@ -278,11 +278,11 @@ And it is **reading in the JSON file:**
 
 
 
-	def create
-	  new_project = {id: params[:id], name: params[:name], github_status: params[:githubstatus } 
-	  @projects << new_project
-	  p projects
-	end
+        def create
+          new_project = {id: params[:id], name: params[:name], github_status: params[:githubstatus } 
+          @projects << new_project
+          p projects
+        end
 
 
  - Lets restart our rails server so we can actually see what’s happening:
