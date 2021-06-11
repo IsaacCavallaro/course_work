@@ -16,7 +16,7 @@
 
             def show
             # showing 1 of the resources 
-            @projects = 	@projects.find do |project|
+            @projects = @projects.find do |project|
                 project[:id] == params[:id].to_i
             end 
             end
