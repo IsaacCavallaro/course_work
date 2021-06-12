@@ -158,7 +158,7 @@
 
 ![Alt](partial3.png)
 
-        <nav>
+          <nav>
 		  <%= link_to  “New Projects Page”, projects_new_path %>
 		</nav>
 
