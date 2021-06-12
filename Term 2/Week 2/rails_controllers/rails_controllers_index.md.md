@@ -230,6 +230,112 @@ Then refresh our browser.
 
 - There is no response being sent back so this number 8 line (in the image) is not occuring. 
 
-# Send back a response
+# Send back a response (html)
 
 - To send back a response from our controller actions we have a number of different ways to do so.
+
+- One way in which we can send a response back to the client is: 
+
+	- To use the **render** keyword.
+
+- Render will send back a response to our client.
+
+			
+		class ProjectsController < ApplicationController
+			def index
+			  render
+			end
+
+# Render
+
+- Render is a method.
+
+- Render can take a number of different arguments.
+
+- With a number of different notations. so
+
+# Render Notation
+
+- keyword argument notation:
+
+- "I want render to send back some html"
+
+- We will need to pass a string.
+
+		class ProjectsController < ApplicationController
+			def index
+			  render html: "<h1> Hello World!</h1>"
+			end
+
+- We also need to chain on this html_safe method.
+
+
+			class ProjectsController < ApplicationController
+			def index
+			  render html: "<h1> hello word</h1>".html_safe
+			end
+
+# Refresh browser 
+
+- You can see that hello world has been sent from:
+
+	- Our controller action BACK to the client. 
+
+![Alt](controller1.png)
+
+- Now it is displaying our html in the browser.
+
+- If we look with ou dev tools we can see the h1 is there:
+
+![Alt](controller2.png)
+
+
+# Send back a response (plain text)
+
+		class ProjectsController < ApplicationController
+			def index
+			  render plain: "hello word"
+			end
+
+
+# Refresh browser 
+
+- We will get some plain text in the browser. 
+
+![Alt](controller3.png)
+
+
+# Send back a response (json)
+
+- Json will accept a string:
+
+		class ProjectsController < ApplicationController
+			def index
+			  render json: "hello word"
+			end
+
+
+- Json will accept a hash:
+
+		class ProjectsController < ApplicationController
+			def index
+			  render json: { message: "hello word" }
+			end
+
+- if we send that back to the client (refresh browser)
+
+- In chrome, we will see:
+
+![Alt](controller4.png)
+
+- In firefox, we will see:
+
+![Alt](controller5.png)
+
+- That we are acutally sending JSON back to the client.
+
+
+ # Send back another json response
+
+ 14 mins 26 
+
