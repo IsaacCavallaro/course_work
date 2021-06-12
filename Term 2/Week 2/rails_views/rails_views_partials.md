@@ -241,11 +241,11 @@
 
 ![Alt](partial5.png)
 
-- Lets put that in its own seperate partial  
+- Lets put that in its own seperate partial.  
 
 - This will allow us to clean up  our code in index.html.erb
 
-- This is going to be a card partial or we could call it a project partial since it’s going to be ONE SINGLE project 
+- This is going to be a card partial or we could call it a project partial since it’s going to be ONE SINGLE project. 
 
 - This is NOT going to be defined in shared directory.  
 
@@ -261,17 +261,17 @@
 
 # Copy from index to card
 
-- We can copy us list (image above) and take it out of our index.html.erb file
+- We can copy our list (image above) and take it out of our index.html.erb file:
 
 ![Alt](partial6.png)
 
-- And paste it into our _card.html.erb file
+- And paste it into our _card.html.erb file:
 
 ![Alt](partial7.png)
 
 # Render partial from index.html.erb
 
-- This will be similar to how we rendered the navbar partial
+- This will be similar to how we rendered the navbar partial.
 
 
 - The reason we can pass in card alone is because Rails is smart enough to know that:
