@@ -324,11 +324,11 @@ Then refresh our browser.
 
 - if we send that back to the client (refresh browser)
 
-- In chrome, we will see:
+- In **chrome**, we will see:
 
 ![Alt](controller4.png)
 
-- In firefox, we will see:
+- In **firefox**, we will see:
 
 ![Alt](controller5.png)
 
@@ -337,5 +337,146 @@ Then refresh our browser.
 
  # Send back another json response
 
- 14 mins 26 
+- We are going to check th hash that we send backin the response. 
 
+
+		class ProjectsController < ApplicationController
+			def index
+			  render json: { message: "hello word" }
+			end
+
+- Instead of the placeholder above, we are going to send back some real projects back to the client. We
+
+## Define a variable
+
+- We will name that variable projects:
+
+		class ProjectsController < ApplicationController
+			def index
+			  projects = 
+			  render json: { message: "hello word" }
+			end
+
+
+
+- Projects is going to store an array of hashes
+
+- Each hash will represent one single project
+
+- Each has will have a unique key value attribute or key value pair (id)
+
+		class ProjectsController < ApplicationController
+			def index
+			  projects = [
+				  {
+					id: 1, 
+					name: "rails project", 
+					github_status: false
+				  },
+				  {
+					id: 2, 
+					name: "terminal app", 
+					github_status: true
+				  }
+			  ]
+			  render json: { message: "hello word" }
+			end
+
+![Alt](controller6.png)
+
+
+
+- Instead of sending back our placeholder key value pair (message hello world), lets change message to projects (this will be our key that we are sending back in the response)
+
+- The value can be the array of hashes defined in the the action. So we can just pass the variable projects - as a value. 
+
+- In this manner, the value is an array of hashes. 
+
+
+		render json: { projects: projects }
+
+- Code below:
+
+
+		class ProjectsController < ApplicationController
+			def index
+			  projects = [
+				  {
+					id: 1, 
+					name: "rails project", 
+					github_status: false
+				  },
+				  {
+					id: 2, 
+					name: "terminal app", 
+					github_status: true
+				  }
+			  ]
+			  render json: { projects: projects }
+			end
+
+![Alt](controller7.png)
+
+
+## Back to browser
+
+- If we refresh and go back to the browser: 22
+
+- We are no longer getting our placeholder message but rather, we are getting an array of hashes with some real data.
+
+![Alt](controller8.png)
+
+
+## One step further
+
+- We could just send back the array of hashes as a response WITHOUT the key to indentify that we are actually sending back projects. 
+
+		render json: projects
+
+
+Code: 
+
+	class ProjectsController < ApplicationController
+			def index
+			  projects = [
+				  {
+					id: 1, 
+					name: "rails project", 
+					github_status: false
+				  },
+				  {
+					id: 2, 
+					name: "terminal app", 
+					github_status: true
+				  }
+			  ]
+			  render json: projects
+			end
+
+
+![Alt](controller10.png)
+
+
+## Back to browser
+
+- If we save and refresh our browser:
+
+- Now we are just getting back  the array of hashes back to the client side. 
+
+![Alt](controller9.png)
+
+# Index action
+
+- The convention for an index action in a Rails application is to:
+
+## Send back all of the resources to the client.
+
+- By resources, we mean projects (in this example)
+
+- If we were making a "to do" app:
+
+	- in the index action you would send back all of the "to do's".
+
+- If you were making an app that was storing all of the bookings you would:
+
+	- Send back all of the bookings in the index action inside of the bookings controller
