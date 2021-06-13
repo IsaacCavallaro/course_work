@@ -120,15 +120,15 @@ Generate a new rails app (project mgmt app)
 
 - unititialized constat ProjectsController
 
-- This is occuring because we are saying the route 
+- This is occuring because we are saying in the route:
+
+	- projects controller 
+
+	- And this projects controller currently DOES NOT exist. 
 
 ![Alt](rails_controller_seven.png)
 
-- Or projects controller (that's really what it means)
-
-- And this projects controller currently DOES NOT exist. 
-
-- So we need to create the projects controllers
+- So we need to create the projects controllers.
 
 ## Creating projects controllers
 
