@@ -479,4 +479,4 @@ Code:
 
 - If you were making an app that was storing all of the bookings you would:
 
-	- Send back all of the bookings in the index action inside of the bookings controller
+	- Send back all of the bookings in the index action inside of the bookings controller.
