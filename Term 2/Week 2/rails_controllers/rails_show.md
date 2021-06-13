@@ -183,7 +183,7 @@ ETC
 ![Alt](show_seventeen.png)
 
 
-- Although it is working, it is not very useful given we are just sending back plain text and not being back a project from our array of hashes. 
+- Although it is working, it is not very useful given we are just sending back plain text and not sending back a project from our array of hashes. 
 
 ![Alt](show_nineteen.png)
 
@@ -193,7 +193,7 @@ ETC
 - First step is to grab our array of hashes.
 
 
-- This won’t be very DRY but we can refactor later. 
+- This won’t be very DRY but we can **refactor later**. 
 
 
 ![Alt](show_twenty.png)
@@ -219,9 +219,9 @@ ETC
 
 		end
 
-- Within the do block we are going to find a project based on it’s id
+- Within the **do block** we are going to **find a project** based on the **projects id.**
 
-- Because each project is a hash, we will use the hash notation:
+- Because each project is a **hash**, we will use the **hash notation:**
 
 
 
@@ -231,12 +231,12 @@ ETC
 		
 		end
 
-- We want to find the one that is equal to something
+- We want to find the one that is **equal to something**
 
 
 		projects.find do |project|
 		
-			project[:id] ==something
+			project[:id] == something
 		
 		end
 
@@ -249,9 +249,9 @@ ETC
 # Accessing URL path in controller action
 
 
-- We can use a special method params
+- We can use a special method **params**.
 
-- If we comment out the block of code we just did and print params
+- If we comment out the block of code we just did and print **params:**
 
 ![Alt](show_twenty_three.png)
 
@@ -268,14 +268,14 @@ ETC
 		localhost: 3000/projects/1
 
 
-- This will still work
+- This will still work.
 
-- Then what we can see is our print statement (see image below):
+- Then what we can see is our **print statement** (see image below):
 
 ![Alt](show_twenty_four.png)
 
 
-- We printed out params 
+- We printed out **params** 
     - params is a special object in which you can access everything in it using the hash notation.
 
 - In this special params object, you can see that there is an id key:
@@ -349,7 +349,7 @@ ETC
 
 ![Alt](show_thirty_seven.png)
 
-- We can then store the result of the find in a variable (found_project in this example):
+- We can then **store** the result of the **find** in a **variable** (found_project in this example):
 
 ![Alt](show_thirty_eight.png)
 
@@ -365,7 +365,7 @@ ETC
 		localhost:3000/projects/1
 
 
-- And at the moment the return of our found_project is nil
+- And at the moment the return of our found_project is **nil**:
 
 
 ![Alt](show_thirty_nine.png)
@@ -376,7 +376,7 @@ ETC
 
 ![Alt](show_forty.png)
 
-- This id that we are pulling out of params is actually a string.  
+- This id that we are pulling out of params is **actually a string.**  
 
 
 - Where as the project[:id] 
@@ -385,11 +385,11 @@ ETC
 
 - that we are getting from the hash:
 
-- is an integer. 
+- is an **integer.** 
 
-- So we are comparing an integer to a string. 
+- So we are comparing an **integer** to a **string.** 
 
-- In this case we have to do some explicit type casting and converting the string to an integer. 
+- In this case we have to do some **explicit type casting** and converting the string to an integer. 
 
 
 ![Alt](show_forty_three.png)
@@ -407,7 +407,7 @@ ETC
 # Sending back hash to client:
 
 
-- Instead of plain text we can render JSON and send back the found_project to the client side. 
+- Instead of **plain text** we can **render JSON** and send back the found_project to the client side. 
 
 ![Alt](show_forty_five.png)
 
@@ -419,7 +419,7 @@ ETC
 
 ![Alt](show_forty_six.png)
 
-- And now we are getting just the first project of id 1.
+- And now we are getting just the **first project of id 1.**
 
 - If we pass in 2 the browser:
 
@@ -477,7 +477,7 @@ ETC
 
 		rails s
 
-- The send a request again with a valid project id (1 in this case)
+- Then send a request again with a valid project id (1 in this case)
 
 - And we can see that things still work.
 
