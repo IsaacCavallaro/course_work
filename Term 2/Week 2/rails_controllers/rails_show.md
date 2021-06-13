@@ -63,7 +63,7 @@ ETC
 
 		localhost: 3000/projects/1
 
-- We should be able to fetch our correcting id from our projects_controllers file (the particular hash in the image below):
+- We should be able to fetch our correlating id from our projects_controllers file (the particular hash in the image below):
 
 
 ![Alt](show_seven.png)
